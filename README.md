@@ -13,7 +13,7 @@ Scripts for working with the HFCS data in R
 Run:
 
 ```bash
-psql -U $USER -d $DBNAME < 1_hfcs_schema.sql
+psql -h $PGHOST -U $USER -d $DBNAME < 1_hfcs_schema.sql
 ./2_hfcs_data.sh
-psql -U $USER -d $DBNAME < 3_hfcs_labels.sql
+psql -h $PGHOST -U $USER -d $DBNAME < 3_hfcs_labels.sql
 ```
